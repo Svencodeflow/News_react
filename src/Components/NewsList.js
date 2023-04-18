@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react';
 import NewsItem from './NewsItem';
+import Navbar from './Navbar/Navbar';
 
 const NewsList = () => {
 
     const [news, setNews] = useState([]);
+
+    console.log(Navbar);
 
     useEffect(() => {
         fetch('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=bf8b591b2c224b3c8df94f2a83cba678')

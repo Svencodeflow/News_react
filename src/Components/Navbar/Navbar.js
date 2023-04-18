@@ -3,7 +3,7 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
 
-const Navbar = () => {
+const Navbar = (props) => {
 
   function animation() {
     var tabsNewAnim = $('#navbarSupportedContent');
@@ -34,6 +34,12 @@ const Navbar = () => {
     });
   }
 
+
+  // Form input search Start
+
+  // Form input search End
+
+
   useEffect(() => {
 
     animation();
@@ -49,10 +55,15 @@ const Navbar = () => {
       {/* <NavLink className="navbar-brand navbar-logo" to="/">
 
       </NavLink> */}
+
+      {/* Form input search Start */}
+
       <form className="form_nav">
-        <input className="search_nav" type="search" placeholder="Search" aria-label="Search" />
-        <button className="button_nav" type="submit" >Search</button>
+        <input className="search_nav" type="search" value={props.updated} onChange={props.handleChange} placeholder="Search" aria-label="Search" />
+        <button className="button_nav" onClick={props.handleClick}>Search</button>
       </form>
+
+      {/* Form input search End */}
 
 
       <div
