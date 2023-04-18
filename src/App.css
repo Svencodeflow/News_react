@@ -1,0 +1,58 @@
+.App {
+  text-align: center;
+}
+
+.container {
+  background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1124&q=100');
+  background-position: no-repeat;
+  background-size: contain;
+}
+
+.container h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  width: 50%;
+  margin-left: 25%;
+  /* margin-top: 10%; */
+  padding-top: 10%;
+}
+
+.herbert_container {
+  margin: 0 auto;
+  width: 70%;
+  height: 50vh;
+  background: rgba(255, 0, 0, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.grid_test {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 25px;
+}
+
+.herbert_container h2 {
+  margin-top: 10px;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.herbert img {
+  width: 250px;
+  border-radius: 25%;
+}
+
+.herbert article {
+  text-align: center;
+  margin: auto 0;
+  margin-top: 50px;
+  color: white;
+}
+
+.herbert {
+  margin-top: 100px;
+}
