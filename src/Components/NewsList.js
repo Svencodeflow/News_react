@@ -24,6 +24,7 @@ const NewsList = () => {
                         image={elt.urlToImage}
                         descripton={elt.description}
                         url={elt.url}
+                        key={elt.url}
                     />
                 )
             })}
